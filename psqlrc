@@ -1,0 +1,19 @@
+-- Don't display the startup message.
+\set QUIET 1
+-- Autocomplete keywords in upper case (e.g. SELECT), even if they were started in lowercase.
+\set COMP_KEYWORD_CASE upper
+-- Use table format by default, but automatically switch to expanded table format if there's a lot of data to show.
+\x auto
+-- Show a ¤ character for columns with null values.
+\pset null ¤
+-- Use a separate history file per-database.
+\set HISTFILE ~/.psql_history- :DBNAME
+-- If a command is run more than once in a row, only store it once in the
+-- history.
+\set HISTCONTROL ignoredups
+
+\set VERBOSITY verbose
+\set ON_ERROR_ROLLBACK interactive
+\set PROMPT1 '%[%033[1m%]%M %n@%/%R%[%033[0m%]%# '
+\set PROMPT2 '[more] %R > '
+\unset QUIET
