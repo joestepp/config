@@ -16,6 +16,25 @@ filetype indent on
 set autoread
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-plug
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-surround'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'Valloric/YouCompleteMe'
+Plug 'Raimondi/delimitMate'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'rking/ag.vim'
+Plug 'Shougo/vimshell.vim'
+Plug 'gregsexton/gitv'
+call plug#end()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM UI
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -79,8 +98,8 @@ set hidden
 syntax enable
 
 " https://github.com/daylerees/colour-schemes/blob/master/vim/colors/legacy.vim
-colorscheme legacy
-set background=dark
+silent! colorscheme legacy
+
 
 " Set extra options for GUI mode
 if has("gui_running")
@@ -148,25 +167,6 @@ map k gk
 
 " Enable mouse in all modes
 set mouse=a
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-plug
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/syntastic'
-Plug 'tpope/vim-surround'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'bling/vim-airline'
-Plug 'Valloric/YouCompleteMe'
-Plug 'Raimondi/delimitMate'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'rking/ag.vim'
-Plug 'Shougo/vimshell.vim'
-Plug 'gregsexton/gitv'
-call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
