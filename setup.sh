@@ -1,6 +1,8 @@
 #!/bin/bash
 set -eo pipefail
 
+echo 'symlinking zshrc'
+ln -sf $PWD/zshrc ~/.zshrc
 echo 'symlinking vimrc'
 ln -sf $PWD/vimrc ~/.vimrc
 echo 'symlinking nvim configs to vim configs'
