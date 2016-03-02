@@ -174,6 +174,9 @@ map k gk
 " Enable mouse in all modes
 set mouse=a
 
+" Exit insert mode faster
+imap jk <Esc>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -7,6 +7,7 @@ zplug "plugins/vagrant",   from:oh-my-zsh, if:"which vagrant"
 zplug "plugins/tmux",   from:oh-my-zsh, if:"which tmux"
 zplug "plugins/tmuxinator",   from:oh-my-zsh, if:"which tmuxinator"
 zplug "plugins/osx", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
+zplug "djui/alias-tips"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting", nice:10
 
