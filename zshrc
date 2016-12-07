@@ -1,8 +1,8 @@
-source ~/.zplug/zplug
+source ~/.zplug/init.zsh
 source ~/.zshrc.local
 
-zplug "themes/norm", from:oh-my-zsh
 zplug "plugins/git",   from:oh-my-zsh, if:"which git"
+zplug "themes/norm", from:oh-my-zsh, as:theme
 zplug "plugins/vagrant",   from:oh-my-zsh, if:"which vagrant"
 zplug "plugins/tmux",   from:oh-my-zsh, if:"which tmux"
 zplug "plugins/tmuxinator",   from:oh-my-zsh, if:"which tmuxinator"
