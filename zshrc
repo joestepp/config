@@ -13,14 +13,13 @@ unsetopt list_beep              # no bell on ambiguous completion
 zplug "plugins/git",   from:oh-my-zsh, if:"which git"
 zplug "themes/norm", from:oh-my-zsh, as:theme
 zplug "plugins/vagrant",   from:oh-my-zsh, if:"which vagrant"
-zplug "plugins/tmux",   from:oh-my-zsh, if:"which tmux"
 zplug "plugins/osx", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
 zplug "djui/alias-tips"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 # Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
+if ! zplug check; then
     printf "Install? [y/N]: "
     if read -q; then
         echo; zplug install
