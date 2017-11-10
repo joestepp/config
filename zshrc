@@ -12,7 +12,6 @@ unsetopt list_beep              # no bell on ambiguous completion
 
 zplug "plugins/git",   from:oh-my-zsh, if:"which git"
 zplug "themes/norm", from:oh-my-zsh, as:theme
-zplug "plugins/vagrant",   from:oh-my-zsh, if:"which vagrant"
 zplug "plugins/osx", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
 zplug "djui/alias-tips"
 zplug "zsh-users/zsh-history-substring-search"

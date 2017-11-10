@@ -21,17 +21,10 @@ set autoread
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'bling/vim-airline'
-Plug 'Valloric/YouCompleteMe'
-Plug 'Raimondi/delimitMate'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'rking/ag.vim'
-Plug 'Shougo/vimshell.vim'
-Plug 'gregsexton/gitv'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -106,7 +99,6 @@ syntax enable
 " https://github.com/daylerees/colour-schemes/blob/master/vim/colors/legacy.vim
 silent! colorscheme legacy
 
-
 " Set extra options for GUI mode
 if has("gui_running")
     set guioptions-=T
@@ -176,16 +168,3 @@ set mouse=a
 
 " Exit insert mode faster
 imap jk <Esc>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Misc
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" allows cursor change in tmux mode
-if exists('$TMUX')
-    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-else
-    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-endif
