@@ -1,5 +1,5 @@
-source ~/.zplug/init.zsh
 source ~/.zshrc.local
+source $ZPLUG_HOME/init.zsh
 
 HISTSIZE=10000
 SAVEHIST=10000
@@ -29,3 +29,9 @@ fi
 zplug load
 
 source /usr/local/bin/virtualenvwrapper.sh
+
+if [ -e $HOME/code/shell_scripts/z/z.sh ]
+then
+    source $HOME/code/shell_scripts/z/z.sh
+fi
+
