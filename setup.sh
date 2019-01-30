@@ -12,6 +12,5 @@ echo 'symlinking tmux.conf'
 ln -sf $PWD/tmux.conf ~/.tmux.conf
 echo 'symlinking psqlrc'
 ln -sf $PWD/psqlrc ~/.psqlrc
-echo 'downloading vim-plug'
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+echo 'symlinking zimrc'
+ln -sf $PWD/zimrc ~/.zimrc
