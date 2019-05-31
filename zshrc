@@ -25,13 +25,3 @@ if [ -e $HOME/code/shell_scripts/z/z.sh ]
 then
     source $HOME/code/shell_scripts/z/z.sh
 fi
-
-source ~/.iterm2_shell_integration.zsh
-
-# PM functions
-source ~/.pm/pm.zsh
-alias pma="pm add"
-alias pmg="pm go"
-alias pmrm="pm remove"
-alias pml="pm list"
-# end PM
