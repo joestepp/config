@@ -11,6 +11,12 @@
 -- If a command is run more than once in a row, only store it once in the
 -- history.
 \set HISTCONTROL ignoredups
+-- Show unicode lines between rows and columns in select results.
+\pset linestyle unicode
+-- Show lines around the outside of select results.
+\pset border 2
+-- Show how long it takes to run each query.
+\timing
 
 \set VERBOSITY verbose
 \set ON_ERROR_ROLLBACK interactive
