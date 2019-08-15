@@ -25,3 +25,7 @@ if [ -e $HOME/code/shell_scripts/z/z.sh ]
 then
     source $HOME/code/shell_scripts/z/z.sh
 fi
+
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+fi

@@ -16,18 +16,6 @@ filetype indent on
 set autoread
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-plug
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-surround'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'rking/ag.vim'
-call plug#end()
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
