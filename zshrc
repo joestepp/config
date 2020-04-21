@@ -129,6 +129,10 @@ unsetopt list_beep              # no bell on ambiguous completion
 
 source /usr/local/bin/virtualenvwrapper.sh
 
+if type fasd > /dev/null 2>&1; then
+    eval "$(fasd --init auto)"
+fi
+
 if type sqlite3 > /dev/null 2>&1; then
     source ~/code/config/zsh-histdb/sqlite-history.zsh
     autoload -Uz add-zsh-hook
