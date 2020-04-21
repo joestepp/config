@@ -130,7 +130,7 @@ unsetopt list_beep              # no bell on ambiguous completion
 source /usr/local/bin/virtualenvwrapper.sh
 
 if type sqlite3 > /dev/null 2>&1; then
-    source zsh-histdb/sqlite-history.zsh
+    source ~/code/config/zsh-histdb/sqlite-history.zsh
     autoload -Uz add-zsh-hook
     add-zsh-hook precmd histdb-update-outcome
 fi
