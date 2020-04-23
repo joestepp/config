@@ -139,6 +139,17 @@ if type sqlite3 > /dev/null 2>&1; then
     add-zsh-hook precmd histdb-update-outcome
 fi
 
+if type pet > /dev/null 2>&1; then
+    function pet-select() {
+      BUFFER=$(pet search --query "$LBUFFER")
+      CURSOR=$#BUFFER
+      zle redisplay
+    }
+    zle -N pet-select
+    stty -ixon
+    bindkey '^s' pet-select
+fi
+
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
 fi
